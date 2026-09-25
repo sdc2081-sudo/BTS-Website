@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0A1F44" />
+<title>Products &amp; Solutions | Balaji Technologies Suppliers Pvt. Ltd.</title>
+<meta name="description" content="Surveillance systems, optical fiber &amp; FTTH solutions (OLT, ODF, SFP, patch cables, distribution boxes), enterprise networking gear, and power backup hardware supplied by Balaji Technologies in Nepal." />
+<link rel="icon" href="logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<style>
+/* ============================================================
+   BALAJI TECHNOLOGIES SUPPLIERS PVT. LTD. — products.html
+   ============================================================ */
+:root{
+  --navy-900:#061229;--navy-800:#0A1F44;--navy-700:#123063;--navy-600:#1B417F;
+  --teal-500:#00C2D1;--teal-400:#25D6E6;--teal-300:#7FE9F2;
+  --ink:#0D1B2A;--body:#4A5A72;--muted:#7A8AA0;
+  --line:#E4E9F0;--soft:#F5F7FA;--white:#FFFFFF;
+  --ok:#12B76A;--danger:#E5484D;
+  --radius:12px;--radius-lg:16px;
+  --shadow-sm:0 1px 2px rgba(10,31,68,.06),0 2px 8px rgba(10,31,68,.05);
+  --shadow:0 6px 20px rgba(10,31,68,.08);
+  --shadow-lg:0 16px 40px rgba(10,31,68,.13);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --maxw:1100px;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%;}
+body{margin:0;font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:14px;line-height:1.6;color:var(--body);background:var(--white);overflow-x:hidden;}
+img{max-width:100%;display:block;height:auto;}
+svg{display:block;width:14px;height:14px;max-width:100%;flex:none;overflow:visible;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;cursor:pointer;border:0;background:none;}
+ul{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4{color:var(--ink);font-weight:800;line-height:1.2;margin:0 0 .5em;letter-spacing:-.02em;}
+h1{font-size:clamp(1.4rem,2.6vw,2rem);}
+h2{font-size:clamp(1.15rem,1.9vw,1.5rem);}
+h3{font-size:.98rem;}
+h4{font-size:.9rem;}
+p{margin:0 0 .8rem;}
+:focus-visible{outline:2px solid var(--teal-500);outline-offset:2px;border-radius:4px;}
+.container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:18px;}
+.section{padding:36px 0;}
+.section--soft{background:var(--soft);}
+.section--tight{padding:26px 0;}
+@media (min-width:900px){.section{padding:52px 0;}.section--tight{padding:34px 0;}}
+
+.eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:.66rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--teal-500);margin-bottom:8px;}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--teal-500);border-radius:2px;}
+.section-head{max-width:620px;margin-bottom:24px;}
+.section-head.center{margin-inline:auto;text-align:center;}
+.section-head.center .eyebrow::before{display:none;}
+.section-head p{font-size:.88rem;margin:0;}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:9px 16px;border-radius:100px;font-size:.8rem;font-weight:700;white-space:nowrap;
+  transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s var(--ease),
+    color .22s var(--ease),border-color .22s var(--ease);}
+.btn svg{width:12px;height:12px;}
+.btn--primary{background:linear-gradient(135deg,var(--teal-500),#009BB0);color:#04222A;box-shadow:0 6px 16px rgba(0,194,209,.3);}
+.btn--primary:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,194,209,.4);}
+.btn--ghost{background:transparent;color:var(--navy-800);border:1.4px solid var(--line);}
+.btn--ghost:hover{border-color:var(--navy-800);transform:translateY(-1px);}
+.btn--outline-light{background:transparent;color:#fff;border:1.4px solid rgba(255,255,255,.3);}
+.btn--outline-light:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6);}
+.btn--sm{padding:7px 13px;font-size:.75rem;}
+.btn--sm svg{width:11px;height:11px;}
+
+/* ---------- TOP BAR ---------- */
+.topbar{background:var(--navy-900);color:#A9BBD5;font-size:.72rem;border-bottom:1px solid rgba(255,255,255,.06);}
+.topbar__inner{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:34px;flex-wrap:wrap;}
+.topbar__group{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+.topbar__item{display:inline-flex;align-items:center;gap:5px;transition:color .2s;}
+.topbar__item:hover{color:var(--teal-400);}
+.topbar__item svg{width:11px;height:11px;stroke:var(--teal-400);}
+.topbar__wa{color:var(--teal-400);font-weight:600;}
+@media (max-width:980px){
+  .topbar__inner{justify-content:center;padding-block:6px;}
+  .topbar__group:first-child .topbar__item:not(:first-child){display:none;}
+}
+
+/* ---------- HEADER ---------- */
+.header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.93);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);transition:box-shadow .3s var(--ease),background .3s var(--ease);}
+.header.scrolled{box-shadow:0 4px 18px rgba(10,31,68,.08);background:rgba(255,255,255,.98);}
+.header__inner{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:70px;}
+.logo{display:flex;align-items:center;gap:10px;flex:none;}
+.logo__img{height:48px;width:auto;max-width:200px;object-fit:contain;display:block;}
+.logo__mark{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--navy-800),var(--navy-600));color:var(--teal-400);
+  font-weight:800;font-size:.85rem;box-shadow:0 4px 14px rgba(10,31,68,.24);}
+.logo__text{display:flex;flex-direction:column;line-height:1.15;}
+.logo__text strong{font-size:.88rem;font-weight:800;color:var(--navy-800);letter-spacing:-.02em;}
+.logo__text small{font-size:.62rem;font-weight:600;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;}
+.footer .logo__text strong{color:#fff;}
+.footer .logo__text small{color:#7E93AF;}
+.nav{display:flex;align-items:center;gap:2px;}
+.nav a{position:relative;padding:7px 10px;border-radius:7px;font-size:.82rem;font-weight:600;
+  color:var(--navy-800);transition:color .2s,background .2s;}
+.nav a:not(.nav__cta)::after{content:"";position:absolute;left:10px;right:10px;bottom:3px;height:2px;
+  background:var(--teal-500);border-radius:2px;transform:scaleX(0);transform-origin:left;
+  transition:transform .28s var(--ease);}
+.nav a:not(.nav__cta):hover{color:var(--teal-500);}
+.nav a:not(.nav__cta):hover::after,.nav a.active:not(.nav__cta)::after{transform:scaleX(1);}
+.nav a.active:not(.nav__cta){color:var(--teal-500);}
+.nav__cta{margin-left:8px;padding:8px 15px;border-radius:100px;background:var(--navy-800);color:#fff !important;font-size:.8rem;}
+.nav__cta:hover{background:var(--teal-500);color:#04222A !important;}
+.nav-toggle{display:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--line);
+  background:#fff;flex-direction:column;align-items:center;justify-content:center;gap:4px;}
+.nav-toggle span{display:block;width:16px;height:2px;background:var(--navy-800);border-radius:2px;
+  transition:transform .3s var(--ease),opacity .2s;}
+.nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+@media (max-width:1040px){
+  .nav-toggle{display:flex;}
+  .nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:2px;
+    background:#fff;border-bottom:1px solid var(--line);padding:10px 18px 16px;
+    box-shadow:0 14px 30px rgba(10,31,68,.1);transform:translateY(-10px);opacity:0;visibility:hidden;
+    transition:opacity .26s var(--ease),transform .26s var(--ease),visibility .26s;}
+  .nav.open{transform:none;opacity:1;visibility:visible;}
+  .nav a{padding:10px;font-size:.9rem;border-radius:8px;}
+  .nav a:not(.nav__cta)::after{display:none;}
+  .nav a:not(.nav__cta):hover{background:var(--soft);}
+  .nav__cta{margin:8px 0 0;text-align:center;justify-content:center;font-size:.86rem;padding:10px 16px;}
+}
+
+/* ---------- PAGE HERO ---------- */
+.page-hero{position:relative;overflow:hidden;color:#C7D3E4;
+  background:radial-gradient(600px 320px at 84% -14%,rgba(0,194,209,.2),transparent 64%),
+    linear-gradient(140deg,var(--navy-800) 0%,#071731 62%,#04101F 100%);
+  padding:28px 0 34px;}
+.page-hero .container{position:relative;z-index:1;}
+.page-hero h1{color:#fff;margin-bottom:8px;}
+.page-hero p{color:#A9B8CE;font-size:.88rem;max-width:640px;margin:0;}
+.breadcrumb{display:flex;align-items:center;gap:7px;font-size:.72rem;font-weight:600;
+  color:#8FA3BE;margin-bottom:12px;flex-wrap:wrap;}
+.breadcrumb a:hover{color:var(--teal-400);}
+.breadcrumb .sep{color:#4A6285;}
+.breadcrumb .current{color:var(--teal-400);}
+
+/* ---------- QUICK NAV CHIPS ---------- */
+.quick-nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px;position:relative;z-index:1;}
+.quick-nav a{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:100px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);
+  color:#D6E1F0;font-size:.76rem;font-weight:700;transition:background .22s var(--ease),
+    border-color .22s var(--ease),transform .22s var(--ease),color .22s var(--ease);}
+.quick-nav a:hover{background:var(--teal-500);border-color:var(--teal-500);color:#04222A;transform:translateY(-1px);}
+.quick-nav a svg{width:11px;height:11px;}
+
+/* ---------- PRODUCT BLOCK ---------- */
+.product-block{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:22px;margin-bottom:18px;box-shadow:var(--shadow-sm);
+  scroll-margin-top:90px;transition:box-shadow .3s var(--ease);}
+.product-block:hover{box-shadow:var(--shadow);}
+.product-block__head{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px;
+  padding-bottom:16px;border-bottom:1px dashed var(--line);}
+.product-block__icon{width:42px;height:42px;border-radius:12px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--navy-800),var(--navy-600));color:var(--teal-400);
+  box-shadow:0 6px 16px rgba(10,31,68,.2);}
+.product-block__icon svg{width:18px;height:18px;}
+.product-block__head h2{margin-bottom:5px;}
+.product-block__head p{margin:0;font-size:.84rem;max-width:680px;}
+@media (max-width:600px){.product-block__head{flex-direction:column;gap:10px;}}
+
+/* Badge */
+.badge{display:inline-block;font-size:.6rem;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;padding:3px 8px;border-radius:100px;margin-left:8px;
+  vertical-align:middle;background:rgba(0,194,209,.14);color:#0089A0;border:1px solid rgba(0,194,209,.3);}
+.badge--new{background:rgba(18,183,106,.14);color:#0B7A46;border-color:rgba(18,183,106,.3);}
+
+/* ---------- ITEM GRID ---------- */
+.item-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}
+.item{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 15px;transition:transform .28s var(--ease),background .28s var(--ease),border-color .28s var(--ease);}
+.item:hover{transform:translateY(-3px);background:#fff;border-color:rgba(0,194,209,.5);}
+.item h4{margin-bottom:4px;color:var(--navy-800);font-size:.86rem;}
+.item p{font-size:.76rem;margin:0;line-height:1.5;}
+.item__tag{display:inline-block;font-size:.6rem;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--teal-500);margin-bottom:6px;}
+
+/* Highlighted FTTH block */
+.product-block--ftth{background:linear-gradient(160deg,#FFFFFF 0%,#F6FBFD 100%);
+  border:1px solid rgba(0,194,209,.35);position:relative;overflow:hidden;}
+.product-block--ftth::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;
+  background:linear-gradient(90deg,var(--teal-500),var(--navy-600));}
+.product-block--ftth .product-block__icon{background:linear-gradient(140deg,var(--teal-500),#009BB0);color:#04222A;}
+.product-block--ftth .item{background:#fff;}
+.product-block--ftth .item:hover{border-color:rgba(0,194,209,.7);box-shadow:0 6px 18px rgba(0,194,209,.15);}
+
+/* ---------- CTA BAND ---------- */
+.cta-band{position:relative;overflow:hidden;border-radius:var(--radius-lg);padding:24px;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;
+  box-shadow:var(--shadow-lg);
+  background:linear-gradient(120deg,var(--navy-800) 0%,#0E2A56 55%,#123063 100%);}
+.cta-band__text{position:relative;z-index:1;max-width:540px;}
+.cta-band h2{color:#fff;margin-bottom:6px;}
+.cta-band p{color:#A9B8CE;margin:0;font-size:.85rem;}
+.cta-band__actions{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:9px;}
+
+/* ---------- FOOTER ---------- */
+.footer{background:var(--navy-900);color:#93A6C1;padding-top:40px;font-size:.8rem;}
+.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:28px;padding-bottom:32px;}
+@media (max-width:1000px){.footer__grid{grid-template-columns:1fr 1fr;gap:26px;}}
+@media (max-width:560px){.footer__grid{grid-template-columns:1fr;}}
+.footer .logo__img{background:#fff;padding:6px 12px;border-radius:9px;height:56px;}
+.footer__about{margin-top:14px;max-width:300px;line-height:1.65;font-size:.78rem;}
+.footer h4{color:#fff;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px;font-weight:800;}
+.footer__links{display:flex;flex-direction:column;gap:7px;}
+.footer__links a{transition:color .2s,transform .2s var(--ease);display:inline-block;font-size:.8rem;}
+.footer__links a:hover{color:var(--teal-400);transform:translateX(3px);}
+.footer__contact{display:flex;flex-direction:column;gap:12px;}
+.footer__contact > div{display:flex;gap:8px;line-height:1.55;}
+.footer__contact svg{width:12px;height:12px;margin-top:3px;color:var(--teal-400);}
+.footer__contact a:hover{color:var(--teal-400);}
+.footer__phones{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px;}
+.footer__phones a{font-size:.7rem;padding:3px 8px;border-radius:100px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);transition:.2s;}
+.footer__phones a:hover{background:var(--teal-500);color:#04222A;border-color:var(--teal-500);}
+.socials{display:flex;gap:7px;margin-top:16px;}
+.socials a{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);
+  transition:background .22s var(--ease),transform .22s var(--ease),color .22s;}
+.socials a svg{width:12px;height:12px;}
+.socials a:hover{background:var(--teal-500);color:#04222A;transform:translateY(-2px);}
+.footer__bottom{border-top:1px solid rgba(255,255,255,.08);padding:14px 0;display:flex;
+  flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+  font-size:.72rem;color:#7E93AF;}
+.footer__bottom a:hover{color:var(--teal-400);}
+
+/* ---------- FLOATING ACTIONS ---------- */
+.fab-stack{position:fixed;right:16px;bottom:16px;z-index:950;display:flex;
+  flex-direction:column;gap:9px;align-items:flex-end;}
+.fab{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+  box-shadow:0 8px 22px rgba(0,0,0,.22);position:relative;
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease);}
+.fab:hover{transform:scale(1.08) translateY(-1px);box-shadow:0 12px 28px rgba(0,0,0,.28);}
+.fab svg{width:18px;height:18px;}
+.fab--wa{background:#25D366;color:#fff;}
+.fab--wa::after{content:"";position:absolute;inset:0;border-radius:50%;
+  border:2px solid #25D366;animation:ripple 2.4s infinite;}
+@keyframes ripple{0%{transform:scale(1);opacity:.75;}100%{transform:scale(1.65);opacity:0;}}
+.fab--top{width:34px;height:34px;background:#fff;color:var(--navy-800);border:1px solid var(--line);
+  opacity:0;visibility:hidden;transform:translateY(8px);
+  transition:opacity .25s,transform .25s,visibility .25s;}
+.fab--top.show{opacity:1;visibility:visible;transform:none;}
+.fab--top svg{width:14px;height:14px;}
+.fab-label{position:absolute;right:calc(100% + 10px);top:50%;transform:translateY(-50%);
+  background:var(--navy-800);color:#fff;font-size:.7rem;font-weight:700;padding:6px 10px;
+  border-radius:7px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .22s var(--ease);}
+.fab:hover .fab-label{opacity:1;}
+@media (max-width:600px){
+  .fab-label{display:none;}
+  .fab-stack{right:12px;bottom:12px;}
+  .fab{width:42px;height:42px;}
+  .fab svg{width:17px;height:17px;}
+  .fab--top{width:32px;height:32px;}
+  .fab--top svg{width:13px;height:13px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TOP UTILITY BAR
+     ============================================================ -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__group">
+      <a class="topbar__item" href="tel:+9779802858997">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        +977 980-2858997
+      </a>
+      <a class="topbar__item" href="mailto:info@balajitechnologies.com.np">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        info@balajitechnologies.com.np
+      </a>
+    </div>
+    <div class="topbar__group">
+      <span class="topbar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Pokhara &amp; Butwal, Nepal
+      </span>
+      <a class="topbar__item topbar__wa" href="https://wa.me/9779802858997" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.21-8.24 8.21Z"/></svg>
+        WhatsApp Quick Chat
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo" aria-label="Balaji Technologies Suppliers Pvt. Ltd. — Home">
+      <span class="logo__mark">BT</span>
+      <img src="logo.jpg" alt="Balaji Technologies Suppliers Pvt. Ltd. logo" class="logo__img"
+           onload="this.previousElementSibling.style.display='none'"
+           onerror="this.style.display='none'" />
+      <span class="logo__text">
+        <strong>Balaji Technologies</strong>
+        <small>Suppliers Pvt. Ltd.</small>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html" class="active">Products &amp; Solutions</a>
+      <a href="branches.html">Outlets / Branches</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="contact.html" class="nav__cta">Request a Quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <span class="current">Products &amp; Solutions</span>
+    </nav>
+    <h1>Products &amp; Solutions</h1>
+    <p>Enterprise-grade hardware across four divisions — surveillance, fiber &amp; networking, complete FTTH rollout solutions, and power systems. All available from our Pokhara and Butwal outlets.</p>
+
+    <div class="quick-nav">
+      <a href="#surveillance">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7 16 12l7 5V7Z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        Surveillance
+      </a>
+      <a href="#networking">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.2"/><path d="M12 2v5"/><path d="M12 17v5"/><path d="M2 12h5"/><path d="M17 12h5"/></svg>
+        Networking
+      </a>
+      <a href="#ftth">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M5 8a7 7 0 0 1 14 0"/><path d="M8 12a4 4 0 0 1 8 0"/></svg>
+        FTTH Solutions
+      </a>
+      <a href="#power">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 10v4"/></svg>
+        Power &amp; Accessories
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRODUCT SECTIONS
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+
+    <!-- =====================================================
+         SURVEILLANCE
+         ===================================================== -->
+    <article class="product-block" id="surveillance">
+      <div class="product-block__head">
+        <div class="product-block__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7 16 12l7 5V7Z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
+        <div>
+          <h2>Surveillance &amp; Security Systems</h2>
+          <p>Protect what matters with reliable, high-definition monitoring built for Nepali conditions — from small retail shops to multi-site commercial deployments.</p>
+        </div>
+      </div>
+
+      <div class="item-grid">
+        <div class="item">
+          <span class="item__tag">Wireless</span>
+          <h4>Wireless CCTV Systems</h4>
+          <p>Flexible installs with minimal cabling — ideal for existing buildings and rented premises.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">IP</span>
+          <h4>IP Cameras</h4>
+          <p>Dome, bullet, PTZ and color-night models in multiple resolutions for indoor and outdoor use.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">HD Analog</span>
+          <h4>HD Analog Cameras</h4>
+          <p>Cost-effective HD-over-coax solutions for retrofits of legacy CCTV systems.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Recording</span>
+          <h4>Network Video Recorders (NVRs)</h4>
+          <p>Multi-channel recording with remote viewing, playback and mobile access.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Recording</span>
+          <h4>Digital Video Recorders (DVRs)</h4>
+          <p>Analog-compatible recording for cost-conscious deployments.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Storage</span>
+          <h4>Surveillance Hard Drives</h4>
+          <p>Purpose-built 24/7-rated HDDs sized from 1TB to 10TB for continuous recording.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Accessories</span>
+          <h4>Mounts, Cables &amp; Power Supplies</h4>
+          <p>Everything needed to complete a clean, reliable installation.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Access Control</span>
+          <h4>Access Control &amp; Intercom</h4>
+          <p>Biometric readers, video door phones, and entry management hardware.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- =====================================================
+         NETWORKING
+         ===================================================== -->
+    <article class="product-block" id="networking">
+      <div class="product-block__head">
+        <div class="product-block__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.2"/><path d="M12 2v5"/><path d="M12 17v5"/><path d="M2 12h5"/><path d="M17 12h5"/><path d="m4.9 4.9 3.6 3.6"/><path d="m15.5 15.5 3.6 3.6"/><path d="m19.1 4.9-3.6 3.6"/><path d="m8.5 15.5-3.6 3.6"/></svg>
+        </div>
+        <div>
+          <h2>Networking &amp; Fiber Infrastructure</h2>
+          <p>Build a backbone that scales — from last-mile drop cables to L3-managed core switching. Suitable for ISPs, enterprises, hotels, campuses and industrial sites.</p>
+        </div>
+      </div>
+
+      <div class="item-grid">
+        <div class="item">
+          <span class="item__tag">Fiber</span>
+          <h4>Optical Fiber Cables</h4>
+          <p>Single-mode and multi-mode, aerial and duct grade, in a range of core counts.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Fiber</span>
+          <h4>Drop Cables</h4>
+          <p>Last-mile fiber drop cables built for outdoor FTTH deployments.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Switching</span>
+          <h4>PoE Switches</h4>
+          <p>Power cameras, access points and IP phones directly over Ethernet.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Switching</span>
+          <h4>Router Switches</h4>
+          <p>Combined routing and switching for compact network deployments.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Switching</span>
+          <h4>Smart Board Switches</h4>
+          <p>Interactive smart board switching solutions for classrooms and meeting rooms.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Switching</span>
+          <h4>L3 Managed Switches</h4>
+          <p>Layer-3 managed switching with VLANs, routing and advanced QoS control.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Routing</span>
+          <h4>High-Performance Routers</h4>
+          <p>Enterprise routing with VPN, load balancing and multi-WAN support.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Wireless</span>
+          <h4>Access Points &amp; Controllers</h4>
+          <p>Indoor and outdoor Wi-Fi 5 / Wi-Fi 6 access points with centralized management.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Cabling</span>
+          <h4>Cat5e / Cat6 / Cat6A Cabling</h4>
+          <p>Copper structured cabling, patch panels, keystone jacks and patch cords.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- =====================================================
+         FTTH SOLUTIONS  (expanded)
+         ===================================================== -->
+    <article class="product-block product-block--ftth" id="ftth">
+      <div class="product-block__head">
+        <div class="product-block__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M5 8a7 7 0 0 1 14 0"/><path d="M8 12a4 4 0 0 1 8 0"/><circle cx="12" cy="20" r="1.5"/></svg>
+        </div>
+        <div>
+          <h2>FTTH Solutions <span class="badge badge--new">Complete Rollout</span></h2>
+          <p>Everything needed for a full Fiber-to-the-Home deployment — from the ISP headend to the customer's wall socket. Headends, distribution frames, splitters, enclosures, patch cables, and optical modules, all sourced from trusted brands.</p>
+        </div>
+      </div>
+
+      <div class="item-grid">
+
+        <div class="item">
+          <span class="item__tag">Headend</span>
+          <h4>EPON / GPON OLTs</h4>
+          <p>Optical Line Terminals in 4 / 8 / 16-port configurations for ISP-grade passive optical network headends.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Headend</span>
+          <h4>OLT Uplink Cards &amp; Modules</h4>
+          <p>SFP / SFP+ uplink cards, GPON line cards, and management modules for OLT chassis.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Distribution</span>
+          <h4>ODF — Optical Distribution Frames</h4>
+          <p>Rack-mount and wall-mount ODF panels in 12 / 24 / 48 / 96-port configurations with SC/LC adapters.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Distribution</span>
+          <h4>Fiber Patch Panels</h4>
+          <p>Rack-mounted patch panels with splice trays and pre-loaded adapter plates for organized fiber termination.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Splitting</span>
+          <h4>Fiber Splitters / Cascades</h4>
+          <p>PLC and FBT splitters in 1×2, 1×4, 1×8, 1×16, 1×32 ratios — including cascade configurations for tiered FTTH networks.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Enclosures</span>
+          <h4>Fiber Distribution Boxes (FDB)</h4>
+          <p>Wall-mount and pole-mount distribution boxes in 4 / 8 / 16 / 24-core configurations with splitters and adapters.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Enclosures</span>
+          <h4>Fiber Terminal Boxes (FTB)</h4>
+          <p>Small customer-premises boxes for terminating drop cables at the subscriber's wall.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Enclosures</span>
+          <h4>Fiber Joint Closures</h4>
+          <p>Inline, dome, and horizontal closures for aerial and underground fiber splicing with IP68 protection.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Optical</span>
+          <h4>SFP / SFP+ Modules</h4>
+          <p>1G and 10G optical transceivers — single-mode, multi-mode, BiDi, CWDM/DWDM — with various reach options.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Optical</span>
+          <h4>Fiber Pigtails</h4>
+          <p>SC / LC / FC / ST pigtails — single-mode and multi-mode — in 0.9mm and 2.0mm jacket options.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Optical</span>
+          <h4>FTTH Patch Cables</h4>
+          <p>SC-SC, LC-LC, SC-LC patch cords in single-mode and multi-mode, with simplex and duplex variants.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Optical</span>
+          <h4>Fiber Adapters &amp; Connectors</h4>
+          <p>SC, LC, FC, ST adapters in simplex and duplex configurations, plus field-installable connectors.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Premises</span>
+          <h4>ONU / ONT Devices</h4>
+          <p>Customer-premises optical network units in 1GE, 1GE+WiFi, and 4GE+WiFi+VoIP configurations.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Premises</span>
+          <h4>WiFi Routers for FTTH</h4>
+          <p>Dual-band routers with GPON/EPON WAN uplink for residential and small-office deployments.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Racking</span>
+          <h4>Server Racks &amp; Cabinets</h4>
+          <p>4U / 9U / 22U / 42U wall-mount and floor-standing racks with cable management and cooling options.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Racking</span>
+          <h4>Rack Accessories</h4>
+          <p>PDUs, shelves, fan trays, blank panels, and cable organizers for tidy installations.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Installation</span>
+          <h4>Fiber Splicing Tools &amp; Kits</h4>
+          <p>Fusion splicers, cleavers, strippers, and OTDR test equipment for professional field work.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Installation</span>
+          <h4>Fiber Tool Kits</h4>
+          <p>Complete installation kits with cleaning tools, visual fault locators, and consumables.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Protection</span>
+          <h4>Drop Wire &amp; Protection</h4>
+          <p>Aerial drop wire, clamps, tension rings, and lightning protection for outdoor fiber runs.</p>
+        </div>
+
+        <div class="item">
+          <span class="item__tag">Duets</span>
+          <h4>Cable Ducts &amp; Conduits</h4>
+          <p>HDPE ducts, corrugated conduits, and micro-duct solutions for underground FTTH routes.</p>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- =====================================================
+         POWER & HARDWARE ACCESSORIES
+         ===================================================== -->
+    <article class="product-block" id="power">
+      <div class="product-block__head">
+        <div class="product-block__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 10v4"/><path d="M5.5 10.5v3"/><path d="M9 10.5v3"/><path d="M12.5 10.5v3"/></svg>
+        </div>
+        <div>
+          <h2>Power &amp; Hardware Accessories</h2>
+          <p>Keep mission-critical systems online through load-shedding and grid instability with dependable backup power hardware.</p>
+        </div>
+      </div>
+
+      <div class="item-grid">
+        <div class="item">
+          <span class="item__tag">Battery</span>
+          <h4>Enterprise Batteries</h4>
+          <p>Long-cycle, low-maintenance batteries for network racks and control rooms.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Backup</span>
+          <h4>Power Backups / UPS</h4>
+          <p>UPS and DC backup systems sized for surveillance and networking loads.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Charging</span>
+          <h4>Industrial Chargers</h4>
+          <p>Heavy-duty chargers designed for continuous enterprise battery banks.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Hardware</span>
+          <h4>Racks, Panels &amp; Accessories</h4>
+          <p>Enclosures, patch panels and cable management for tidy installations.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Power</span>
+          <h4>Power Strips &amp; PDUs</h4>
+          <p>Surge-protected power strips and rack-mount PDUs for network cabinets.</p>
+        </div>
+        <div class="item">
+          <span class="item__tag">Cooling</span>
+          <h4>Rack Cooling Fans</h4>
+          <p>Quiet, high-CFM fan trays and cabinet cooling units for active network racks.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA BAND
+     ============================================================ -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band">
+      <div class="cta-band__text">
+        <h2>Need a Bulk or Project Quotation?</h2>
+        <p>Tell us your quantities, site location, and timeline — we'll respond with pricing, availability, and technical recommendations for your FTTH rollout or surveillance project.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--primary">Request a Quote</a>
+        <a href="https://wa.me/9779802858997" target="_blank" rel="noopener" class="btn btn--outline-light">WhatsApp Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo__mark">BT</span>
+          <img src="logo.jpg" alt="Balaji Technologies Suppliers Pvt. Ltd. logo" class="logo__img"
+               onload="this.previousElementSibling.style.display='none'"
+               onerror="this.style.display='none'" />
+        </a>
+        <p class="footer__about">Supplier of next-generation surveillance, optical fiber &amp; FTTH infrastructure, enterprise networking, and power hardware — serving businesses across Gandaki and Lumbini provinces from Pokhara and Butwal.</p>
+        <div class="socials">
+          <a href="https://wa.me/9779802858997" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.21-8.24 8.21Z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3V9Zm7 0h3.83v1.64h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95s-2.07 1.4-2.07 2.85V21h-4V9Z"/></svg></a>
+          <a href="mailto:info@balajitechnologies.com.np" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products &amp; Solutions</a>
+          <a href="branches.html">Outlets / Branches</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="contact.html">Request a Quote</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Product Categories</h4>
+        <div class="footer__links">
+          <a href="products.html#surveillance">Wireless CCTV &amp; IP Cameras</a>
+          <a href="products.html#surveillance">NVRs &amp; Recording</a>
+          <a href="products.html#networking">Optical Fiber &amp; Drop Cables</a>
+          <a href="products.html#ftth">FTTH — OLT / ODF / SFP</a>
+          <a href="products.html#ftth">Fiber Distribution Boxes</a>
+          <a href="products.html#networking">Managed &amp; PoE Switches</a>
+          <a href="products.html#networking">Routers</a>
+          <a href="products.html#power">Batteries &amp; Power Backup</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Contact Details</h4>
+        <div class="footer__contact">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong>Head Office — Pokhara</strong>Pokhara-4, Street No. 7, Balgopal Marg, Gairapatan, Pokhara, Gandaki Province, Nepal
+              <span class="footer__phones">
+                <a href="tel:+9779802852997">9802852997</a>
+                <a href="tel:+9779802853997">9802853997</a>
+                <a href="tel:+9779802854997">9802854997</a>
+                <a href="tel:+9779802858997">9802858997</a>
+              </span>
+            </span>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong>Branch Office — Butwal</strong>Butwal-9, Kalikapath, Tinkune, Butwal, Lumbini Province, Nepal
+              <span class="footer__phones">
+                <a href="tel:+9779703994050">9703994050</a>
+                <a href="tel:+9779802854414">9802854414</a>
+                <a href="tel:+9779802852579">9802852579</a>
+              </span>
+            </span>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <a href="mailto:info@balajitechnologies.com.np">info@balajitechnologies.com.np</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year">2025</span> Balaji Technologies Suppliers Pvt. Ltd. All rights reserved.</span>
+      <span>Pokhara &middot; Butwal &middot; Nepal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING ACTIONS
+     ============================================================ -->
+<div class="fab-stack">
+  <button class="fab fab--top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+  <a class="fab fab--wa" href="https://wa.me/9779802858997" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <span class="fab-label">Chat on WhatsApp</span>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.21-8.24 8.21Z"/></svg>
+  </a>
+</div>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script>
+(function(){
+  'use strict';
+
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+
+  var navToggle = document.getElementById('navToggle');
+  var nav = document.getElementById('nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      navToggle.classList.toggle('open', open);
+      navToggle.setAttribute('aria-expanded', String(open));
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  var header = document.getElementById('header');
+  var backToTop = document.getElementById('backToTop');
+  function onScroll(){
+    var sy = window.scrollY;
+    if (header) header.classList.toggle('scrolled', sy > 12);
+    if (backToTop) backToTop.classList.toggle('show', sy > 500);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if (backToTop) backToTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+})();
+</script>
+
+</body>
+</html>

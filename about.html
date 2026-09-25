@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0A1F44" />
+<title>About Us | Balaji Technologies Suppliers Pvt. Ltd.</title>
+<meta name="description" content="Learn about Balaji Technologies Suppliers Pvt. Ltd. — a Nepal-based technology supply and solutions company delivering surveillance, fiber networking and power hardware from Pokhara and Butwal." />
+<link rel="icon" href="logo.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   BALAJI TECHNOLOGIES SUPPLIERS PVT. LTD.
+   ============================================================ */
+:root{
+  --navy-900:#061229;--navy-800:#0A1F44;--navy-700:#123063;--navy-600:#1B417F;
+  --teal-500:#00C2D1;--teal-400:#25D6E6;--teal-300:#7FE9F2;
+  --ink:#0D1B2A;--body:#4A5A72;--muted:#7A8AA0;
+  --line:#E4E9F0;--soft:#F5F7FA;--white:#FFFFFF;
+  --ok:#12B76A;--danger:#E5484D;
+  --radius:12px;--radius-lg:16px;
+  --shadow-sm:0 1px 2px rgba(10,31,68,.06),0 2px 8px rgba(10,31,68,.05);
+  --shadow:0 6px 20px rgba(10,31,68,.08);
+  --shadow-lg:0 16px 40px rgba(10,31,68,.13);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --maxw:1100px;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:90px;-webkit-text-size-adjust:100%;}
+body{margin:0;font-family:'Plus Jakarta Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-size:14px;line-height:1.6;color:var(--body);background:var(--white);overflow-x:hidden;}
+img{max-width:100%;display:block;height:auto;}
+
+/* GLOBAL SVG DEFAULT — every icon is 14px unless overridden below */
+svg{display:block;width:14px;height:14px;max-width:100%;flex:none;overflow:visible;}
+
+a{color:inherit;text-decoration:none;}
+button{font:inherit;cursor:pointer;border:0;background:none;}
+ul{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4{color:var(--ink);font-weight:800;line-height:1.2;margin:0 0 .5em;letter-spacing:-.02em;}
+h1{font-size:clamp(1.4rem,2.6vw,2rem);}
+h2{font-size:clamp(1.15rem,1.9vw,1.5rem);}
+h3{font-size:.98rem;}
+h4{font-size:.9rem;}
+p{margin:0 0 .8rem;}
+:focus-visible{outline:2px solid var(--teal-500);outline-offset:2px;border-radius:4px;}
+
+.container{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:18px;}
+.section{padding:36px 0;}
+.section--soft{background:var(--soft);}
+.section--dark{background:var(--navy-800);color:#C7D3E4;}
+.section--tight{padding:26px 0;}
+@media (min-width:900px){.section{padding:52px 0;}.section--tight{padding:34px 0;}}
+
+.eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:.66rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--teal-500);margin-bottom:8px;}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--teal-500);border-radius:2px;}
+.section-head{max-width:620px;margin-bottom:24px;}
+.section-head.center{margin-inline:auto;text-align:center;}
+.section-head.center .eyebrow::before{display:none;}
+.section-head p{font-size:.88rem;margin:0;}
+.section--dark .section-head h2{color:#fff;}
+.section--dark .section-head p{color:#A9B8CE;}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  padding:9px 16px;border-radius:100px;font-size:.8rem;font-weight:700;white-space:nowrap;
+  transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s var(--ease),
+    color .22s var(--ease),border-color .22s var(--ease);}
+.btn svg{width:12px;height:12px;}
+.btn--primary{background:linear-gradient(135deg,var(--teal-500),#009BB0);color:#04222A;box-shadow:0 6px 16px rgba(0,194,209,.3);}
+.btn--primary:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(0,194,209,.4);}
+.btn--ghost{background:transparent;color:var(--navy-800);border:1.4px solid var(--line);}
+.btn--ghost:hover{border-color:var(--navy-800);transform:translateY(-1px);}
+.btn--light{background:#fff;color:var(--navy-800);box-shadow:var(--shadow-sm);}
+.btn--light:hover{transform:translateY(-1px);box-shadow:var(--shadow);}
+.btn--outline-light{background:transparent;color:#fff;border:1.4px solid rgba(255,255,255,.3);}
+.btn--outline-light:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6);}
+.btn--sm{padding:7px 13px;font-size:.75rem;}
+.btn--sm svg{width:11px;height:11px;}
+.btn--block{width:100%;}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s var(--ease),transform .55s var(--ease);}
+.reveal.in{opacity:1;transform:none;}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}*{animation:none!important;}}
+
+.topbar{background:var(--navy-900);color:#A9BBD5;font-size:.72rem;border-bottom:1px solid rgba(255,255,255,.06);}
+.topbar__inner{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:34px;flex-wrap:wrap;}
+.topbar__group{display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+.topbar__item{display:inline-flex;align-items:center;gap:5px;transition:color .2s;}
+.topbar__item:hover{color:var(--teal-400);}
+.topbar__item svg{width:11px;height:11px;stroke:var(--teal-400);}
+.topbar__wa{color:var(--teal-400);font-weight:600;}
+@media (max-width:980px){.topbar__inner{justify-content:center;padding-block:6px;}
+  .topbar__group:first-child .topbar__item:not(:first-child){display:none;}}
+
+.header{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.93);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);transition:box-shadow .3s var(--ease),background .3s var(--ease);}
+.header.scrolled{box-shadow:0 4px 18px rgba(10,31,68,.08);background:rgba(255,255,255,.98);}
+.header__inner{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:62px;}
+.logo{display:flex;align-items:center;gap:9px;flex:none;}
+.logo__img{height:38px;width:auto;max-width:160px;object-fit:contain;display:block;}
+.logo__mark{width:36px;height:36px;border-radius:10px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--navy-800),var(--navy-600));color:var(--teal-400);
+  font-weight:800;font-size:.85rem;box-shadow:0 4px 14px rgba(10,31,68,.24);}
+.logo__text{display:flex;flex-direction:column;line-height:1.15;}
+.logo__text strong{font-size:.85rem;font-weight:800;color:var(--navy-800);letter-spacing:-.02em;}
+.logo__text small{font-size:.6rem;font-weight:600;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;}
+.footer .logo__text strong{color:#fff;}
+.footer .logo__text small{color:#7E93AF;}
+.nav{display:flex;align-items:center;gap:2px;}
+.nav a{position:relative;padding:7px 10px;border-radius:7px;font-size:.82rem;font-weight:600;
+  color:var(--navy-800);transition:color .2s,background .2s;}
+.nav a:not(.nav__cta)::after{content:"";position:absolute;left:10px;right:10px;bottom:3px;height:2px;
+  background:var(--teal-500);border-radius:2px;transform:scaleX(0);transform-origin:left;
+  transition:transform .28s var(--ease);}
+.nav a:not(.nav__cta):hover{color:var(--teal-500);}
+.nav a:not(.nav__cta):hover::after,.nav a.active:not(.nav__cta)::after{transform:scaleX(1);}
+.nav a.active:not(.nav__cta){color:var(--teal-500);}
+.nav__cta{margin-left:8px;padding:8px 15px;border-radius:100px;background:var(--navy-800);color:#fff!important;font-size:.8rem;}
+.nav__cta:hover{background:var(--teal-500);color:#04222A!important;}
+.nav-toggle{display:none;width:38px;height:38px;border-radius:10px;border:1px solid var(--line);
+  background:#fff;flex-direction:column;align-items:center;justify-content:center;gap:4px;}
+.nav-toggle span{display:block;width:16px;height:2px;background:var(--navy-800);border-radius:2px;
+  transition:transform .3s var(--ease),opacity .2s;}
+.nav-toggle.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+@media (max-width:1040px){
+  .nav-toggle{display:flex;}
+  .nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:2px;
+    background:#fff;border-bottom:1px solid var(--line);padding:10px 18px 16px;
+    box-shadow:0 14px 30px rgba(10,31,68,.1);transform:translateY(-10px);opacity:0;visibility:hidden;
+    transition:opacity .26s var(--ease),transform .26s var(--ease),visibility .26s;}
+  .nav.open{transform:none;opacity:1;visibility:visible;}
+  .nav a{padding:10px 10px;font-size:.9rem;border-radius:8px;}
+  .nav a:not(.nav__cta)::after{display:none;}
+  .nav a:not(.nav__cta):hover{background:var(--soft);}
+  .nav__cta{margin:8px 0 0;text-align:center;justify-content:center;font-size:.86rem;padding:10px 16px;}
+}
+
+.page-hero{position:relative;overflow:hidden;color:#C7D3E4;
+  background:radial-gradient(600px 320px at 84% -14%,rgba(0,194,209,.2),transparent 64%),
+    linear-gradient(140deg,var(--navy-800) 0%,#071731 62%,#04101F 100%);
+  padding:28px 0 34px;}
+.page-hero .container{position:relative;z-index:1;}
+.page-hero h1{color:#fff;margin-bottom:8px;}
+.page-hero p{color:#A9B8CE;font-size:.88rem;max-width:600px;margin:0;}
+.breadcrumb{display:flex;align-items:center;gap:7px;font-size:.72rem;font-weight:600;
+  color:#8FA3BE;margin-bottom:12px;flex-wrap:wrap;}
+.breadcrumb a:hover{color:var(--teal-400);}
+.breadcrumb .sep{color:#4A6285;}
+.breadcrumb .current{color:var(--teal-400);}
+
+.hero{position:relative;overflow:hidden;padding:34px 0 40px;
+  background:radial-gradient(700px 400px at 82% -8%,rgba(0,194,209,.14),transparent 62%),
+    radial-gradient(600px 400px at 4% 108%,rgba(27,65,127,.18),transparent 60%),
+    linear-gradient(170deg,#F8FAFD 0%,#FFFFFF 62%);}
+.hero__inner{position:relative;display:grid;gap:26px;grid-template-columns:1.05fr .95fr;align-items:center;}
+@media (max-width:900px){.hero__inner{grid-template-columns:1fr;gap:22px;}}
+.pill{display:inline-flex;align-items:center;gap:7px;padding:5px 12px 5px 8px;border-radius:100px;
+  background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm);font-size:.7rem;
+  font-weight:700;color:var(--navy-800);margin-bottom:14px;}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--ok);flex:none;box-shadow:0 0 0 3px rgba(18,183,106,.18);}
+.hero h1{margin-bottom:12px;color:var(--navy-800);}
+.grad{background:linear-gradient(100deg,var(--teal-500),#1B417F 78%);-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero__sub{font-size:.88rem;max-width:480px;margin-bottom:20px;}
+.hero__cta{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px;}
+.hero__ticks{display:flex;flex-wrap:wrap;gap:8px 18px;}
+.hero__ticks li{display:flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;color:var(--navy-800);}
+.hero__ticks svg{width:13px;height:13px;color:var(--teal-500);}
+.hero__visual{position:relative;}
+.tech-panel{position:relative;border-radius:var(--radius-lg);overflow:hidden;padding:10px;
+  background:linear-gradient(155deg,var(--navy-800) 0%,#071731 58%,#04101F 100%);
+  box-shadow:var(--shadow-lg);border:1px solid rgba(255,255,255,.08);}
+.tech-panel svg{width:100%;height:auto;position:relative;z-index:1;}
+.tech-panel__glow{position:absolute;width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,rgba(0,194,209,.32),transparent 68%);
+  top:-70px;right:-50px;filter:blur(10px);pointer-events:none;}
+.float-card{position:absolute;z-index:3;display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,.97);border:1px solid var(--line);border-radius:10px;padding:8px 11px;
+  box-shadow:var(--shadow);animation:floaty 5.5s ease-in-out infinite;}
+.float-card strong{display:block;font-size:.73rem;color:var(--navy-800);line-height:1.2;font-weight:800;}
+.float-card span{display:block;font-size:.62rem;color:var(--muted);font-weight:600;}
+.float-card__icon{width:24px;height:24px;border-radius:7px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,rgba(0,194,209,.18),rgba(27,65,127,.14));color:var(--navy-700);}
+.float-card__icon svg{width:12px;height:12px;}
+.float-card--a{top:8%;left:-16px;}
+.float-card--b{bottom:9%;right:-14px;animation-delay:-2.6s;}
+@keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-7px);}}
+@media (max-width:520px){.float-card{padding:6px 9px;}.float-card__icon{width:20px;height:20px;}
+  .float-card__icon svg{width:10px;height:10px;}.float-card--a{left:-3px;}.float-card--b{right:-3px;}}
+.node-pulse{transform-origin:center;animation:nodePulse 3s ease-in-out infinite;}
+@keyframes nodePulse{0%,100%{opacity:.35;transform:scale(1);}50%{opacity:.9;transform:scale(1.22);}}
+.dash-flow{stroke-dasharray:7 9;animation:dashMove 1.6s linear infinite;}
+@keyframes dashMove{to{stroke-dashoffset:-32;}}
+
+.stats{background:var(--navy-800);position:relative;overflow:hidden;}
+.stats__grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:26px 0;}
+.stat{text-align:center;padding:4px 8px;border-right:1px solid rgba(255,255,255,.1);}
+.stat:last-child{border-right:0;}
+.stat__num{font-size:clamp(1.25rem,2.2vw,1.7rem);font-weight:800;line-height:1.1;letter-spacing:-.03em;
+  background:linear-gradient(120deg,#fff,var(--teal-300));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.stat__label{font-size:.7rem;color:#9FB2CB;font-weight:600;margin-top:2px;}
+@media (max-width:760px){.stats__grid{grid-template-columns:repeat(2,1fr);gap:18px 10px;padding:24px 0;}.stat:nth-child(2){border-right:0;}}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;}
+@media (max-width:860px){.split{grid-template-columns:1fr;gap:22px;}}
+.split__media{border-radius:var(--radius-lg);overflow:hidden;padding:10px;
+  background:linear-gradient(150deg,var(--navy-800),#071731);border:1px solid var(--line);box-shadow:var(--shadow-lg);}
+.split__media svg{width:100%;height:auto;}
+.check-list{display:flex;flex-direction:column;gap:10px;margin-top:16px;}
+.check-list li{display:flex;gap:9px;font-size:.84rem;color:var(--navy-800);font-weight:600;line-height:1.5;}
+.check-list svg{width:14px;height:14px;margin-top:2px;color:var(--teal-500);}
+.check-list small{display:block;font-weight:500;font-size:.74rem;color:var(--muted);margin-top:1px;}
+
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+@media (max-width:1000px){.cat-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto;}}
+.cat-card{position:relative;display:flex;flex-direction:column;background:#fff;
+  border:1px solid var(--line);border-radius:var(--radius-lg);padding:20px 18px 18px;overflow:hidden;
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s var(--ease);}
+.cat-card::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;
+  background:linear-gradient(90deg,var(--teal-500),var(--navy-600));
+  transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease);}
+.cat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:transparent;}
+.cat-card:hover::before{transform:scaleX(1);}
+.cat-card__icon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(140deg,rgba(0,194,209,.15),rgba(27,65,127,.11));
+  color:var(--navy-700);margin-bottom:12px;transition:background .3s var(--ease),color .3s var(--ease);}
+.cat-card__icon svg{width:17px;height:17px;}
+.cat-card:hover .cat-card__icon{background:linear-gradient(140deg,var(--navy-800),var(--navy-600));color:var(--teal-400);}
+.cat-card h3{margin-bottom:6px;}
+.cat-card > p{font-size:.82rem;margin-bottom:14px;}
+.cat-list{display:flex;flex-direction:column;gap:8px;margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);}
+.cat-list li{display:flex;align-items:flex-start;gap:7px;font-size:.8rem;color:var(--navy-800);font-weight:600;line-height:1.45;}
+.cat-list svg{width:12px;height:12px;margin-top:3px;color:var(--teal-500);}
+.cat-list small{display:block;font-weight:500;font-size:.7rem;color:var(--muted);margin-top:1px;}
+.cat-card__link{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:.77rem;
+  font-weight:800;color:var(--navy-800);transition:gap .25s var(--ease),color .25s var(--ease);}
+.cat-card__link:hover{gap:10px;color:var(--teal-500);}
+.cat-card__link svg{width:12px;height:12px;}
+
+.product-block{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:20px;margin-bottom:18px;box-shadow:var(--shadow-sm);scroll-margin-top:90px;}
+.product-block__head{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px;
+  padding-bottom:16px;border-bottom:1px dashed var(--line);}
+.product-block__icon{width:42px;height:42px;border-radius:12px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--navy-800),var(--navy-600));color:var(--teal-400);box-shadow:0 6px 16px rgba(10,31,68,.2);}
+.product-block__icon svg{width:18px;height:18px;}
+.product-block__head h2{margin-bottom:5px;}
+.product-block__head p{margin:0;font-size:.84rem;max-width:640px;}
+@media (max-width:600px){.product-block__head{flex-direction:column;gap:10px;}}
+.item-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;}
+.item{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:14px 15px;
+  transition:transform .28s var(--ease),background .28s var(--ease),border-color .28s var(--ease);}
+.item:hover{transform:translateY(-3px);background:#fff;border-color:rgba(0,194,209,.5);}
+.item h4{margin-bottom:4px;color:var(--navy-800);font-size:.86rem;}
+.item p{font-size:.76rem;margin:0;}
+.item__tag{display:inline-block;font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-500);margin-bottom:6px;}
+
+.why__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+@media (max-width:900px){.why__grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto;}}
+.why-card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--radius-lg);padding:22px 18px;transition:background .3s var(--ease),transform .3s var(--ease),border-color .3s var(--ease);}
+.why-card:hover{background:rgba(255,255,255,.085);border-color:rgba(0,194,209,.45);transform:translateY(-4px);}
+.why-card__icon{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(140deg,rgba(0,194,209,.24),rgba(0,194,209,.06));
+  border:1px solid rgba(0,194,209,.28);color:var(--teal-400);margin-bottom:12px;}
+.why-card__icon svg{width:16px;height:16px;}
+.why-card h3{color:#fff;font-size:.94rem;margin-bottom:6px;}
+.why-card p{color:#A9B8CE;font-size:.82rem;margin:0;}
+
+.branch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+@media (max-width:860px){.branch-grid{grid-template-columns:1fr;}}
+.branch{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;
+  display:flex;flex-direction:column;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s var(--ease);}
+.branch:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+.branch__map{position:relative;height:180px;background:var(--soft);}
+.branch__map iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.22) contrast(1.03);}
+.branch__tag{position:absolute;top:10px;left:10px;z-index:2;padding:4px 10px;border-radius:100px;
+  background:rgba(10,31,68,.92);color:#fff;font-size:.62rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;}
+.branch__tag.is-branch{background:rgba(0,194,209,.94);color:#04222A;}
+.branch__body{padding:18px;flex:1;display:flex;flex-direction:column;}
+.branch__body h3{font-size:.98rem;margin-bottom:12px;}
+.branch__row{display:flex;gap:9px;margin-bottom:11px;font-size:.82rem;line-height:1.55;}
+.branch__row > svg{width:14px;height:14px;margin-top:3px;color:var(--teal-500);}
+.branch__row strong{display:block;color:var(--navy-800);font-weight:800;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;}
+.branch__row a:hover{color:var(--teal-500);}
+.branch__actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:14px;border-top:1px dashed var(--line);}
+.branch__actions .btn{flex:1 1 auto;min-width:120px;}
+.phone-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:2px;}
+.phone-chips a{display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border-radius:100px;
+  background:var(--soft);border:1px solid var(--line);font-size:.72rem;font-weight:700;color:var(--navy-800);
+  transition:background .22s var(--ease),border-color .22s var(--ease),color .22s var(--ease),transform .22s var(--ease);}
+.phone-chips a:hover{background:var(--navy-800);border-color:var(--navy-800);color:#fff;transform:translateY(-1px);}
+.phone-chips svg{width:10px;height:10px;}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:start;}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr;gap:22px;}}
+.contact-info__list{display:flex;flex-direction:column;gap:4px;margin-top:18px;}
+.contact-info__item{display:flex;gap:11px;padding:12px;border-radius:var(--radius);transition:background .3s var(--ease),transform .3s var(--ease);}
+.contact-info__item:hover{background:var(--soft);transform:translateX(3px);}
+.contact-info__icon{width:32px;height:32px;border-radius:9px;flex:none;display:grid;place-items:center;
+  background:linear-gradient(140deg,rgba(0,194,209,.16),rgba(27,65,127,.1));color:var(--navy-700);}
+.contact-info__icon svg{width:14px;height:14px;}
+.contact-info__item strong{display:block;font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:4px;}
+.contact-info__item span,.contact-info__item a{font-size:.84rem;color:var(--navy-800);font-weight:600;line-height:1.55;}
+.contact-info__item a:hover{color:var(--teal-500);}
+.contact-cta-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+  padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden;}
+.form-card::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--teal-500),var(--navy-600));}
+.form-card h3{margin-bottom:4px;}
+.form-card > p{font-size:.82rem;margin-bottom:18px;}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.field{display:flex;flex-direction:column;gap:5px;}
+.field--full{grid-column:1/-1;}
+@media (max-width:560px){.form-grid{grid-template-columns:1fr;}}
+.field label{font-size:.72rem;font-weight:800;color:var(--navy-800);}
+.field label .req{color:var(--danger);}
+.field input,.field select,.field textarea{width:100%;padding:9px 12px;border:1.4px solid var(--line);
+  border-radius:9px;background:#FBFCFE;font:inherit;font-size:.84rem;color:var(--navy-800);transition:border-color .2s var(--ease),box-shadow .2s var(--ease);}
+.field textarea{resize:vertical;min-height:88px;}
+.field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237A8AA0' stroke-width='2.5'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:34px;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal-500);background:#fff;box-shadow:0 0 0 3px rgba(0,194,209,.14);}
+.field.error input,.field.error select,.field.error textarea{border-color:var(--danger);background:#FFF8F8;}
+.field__err{font-size:.68rem;color:var(--danger);font-weight:700;display:none;}
+.field.error .field__err{display:block;}
+.form-foot{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:16px;}
+.form-foot .btn{flex:1 1 180px;}
+.form-note{font-size:.7rem;color:var(--muted);flex:1 1 100%;}
+.form-success{display:none;text-align:center;padding:20px 10px;}
+.form-success.show{display:block;}
+.form-success__icon{width:44px;height:44px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;background:rgba(18,183,106,.12);color:var(--ok);}
+.form-success__icon svg{width:20px;height:20px;}
+.form-success p{font-size:.82rem;max-width:380px;margin-inline:auto;}
+
+.cta-band{position:relative;overflow:hidden;border-radius:var(--radius-lg);padding:24px;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;box-shadow:var(--shadow-lg);
+  background:linear-gradient(120deg,var(--navy-800) 0%,#0E2A56 55%,#123063 100%);}
+.cta-band__text{position:relative;z-index:1;max-width:520px;}
+.cta-band h2{color:#fff;margin-bottom:6px;}
+.cta-band p{color:#A9B8CE;margin:0;font-size:.85rem;}
+.cta-band__actions{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:9px;}
+
+.footer{background:var(--navy-900);color:#93A6C1;padding-top:40px;font-size:.8rem;}
+.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.3fr;gap:28px;padding-bottom:32px;}
+@media (max-width:1000px){.footer__grid{grid-template-columns:1fr 1fr;gap:26px;}}
+@media (max-width:560px){.footer__grid{grid-template-columns:1fr;}}
+.footer .logo__img{background:#fff;padding:5px 10px;border-radius:9px;height:44px;}
+.footer__about{margin-top:14px;max-width:300px;line-height:1.65;font-size:.78rem;}
+.footer h4{color:#fff;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px;font-weight:800;}
+.footer__links{display:flex;flex-direction:column;gap:7px;}
+.footer__links a{transition:color .2s,transform .2s var(--ease);display:inline-block;font-size:.8rem;}
+.footer__links a:hover{color:var(--teal-400);transform:translateX(3px);}
+.footer__contact{display:flex;flex-direction:column;gap:12px;}
+.footer__contact > div{display:flex;gap:8px;line-height:1.55;}
+.footer__contact svg{width:12px;height:12px;margin-top:3px;color:var(--teal-400);}
+.footer__contact a:hover{color:var(--teal-400);}
+.footer__phones{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px;}
+.footer__phones a{font-size:.7rem;padding:3px 8px;border-radius:100px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);transition:.2s;}
+.footer__phones a:hover{background:var(--teal-500);color:#04222A;border-color:var(--teal-500);}
+.socials{display:flex;gap:7px;margin-top:16px;}
+.socials a{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);
+  transition:background .22s var(--ease),transform .22s var(--ease),color .22s;}
+.socials a svg{width:12px;height:12px;}
+.socials a:hover{background:var(--teal-500);color:#04222A;transform:translateY(-2px);}
+.footer__bottom{border-top:1px solid rgba(255,255,255,.08);padding:14px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;font-size:.72rem;color:#7E93AF;}
+.footer__bottom a:hover{color:var(--teal-400);}
+
+.fab-stack{position:fixed;right:16px;bottom:16px;z-index:950;display:flex;flex-direction:column;gap:9px;align-items:flex-end;}
+.fab{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 22px rgba(0,0,0,.22);position:relative;transition:transform .25s var(--ease),box-shadow .25s var(--ease);}
+.fab:hover{transform:scale(1.08) translateY(-1px);box-shadow:0 12px 28px rgba(0,0,0,.28);}
+.fab svg{width:18px;height:18px;}
+.fab--wa{background:#25D366;color:#fff;}
+.fab--wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:ripple 2.4s infinite;}
+@keyframes ripple{0%{transform:scale(1);opacity:.75;}100%{transform:scale(1.65);opacity:0;}}
+.fab--top{width:34px;height:34px;background:#fff;color:var(--navy-800);border:1px solid var(--line);opacity:0;visibility:hidden;transform:translateY(8px);}
+.fab--top.show{opacity:1;visibility:visible;transform:none;}
+.fab--top svg{width:14px;height:14px;}
+.fab-label{position:absolute;right:calc(100% + 10px);top:50%;transform:translateY(-50%);
+  background:var(--navy-800);color:#fff;font-size:.7rem;font-weight:700;padding:6px 10px;border-radius:7px;
+  white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .22s var(--ease);}
+.fab:hover .fab-label{opacity:1;}
+
+@media (max-width:600px){
+  .fab-label{display:none;}
+  .fab-stack{right:12px;bottom:12px;}
+  .fab{width:42px;height:42px;}
+  .fab svg{width:17px;height:17px;}
+  .fab--top{width:32px;height:32px;}
+  .fab--top svg{width:13px;height:13px;}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__group">
+      <a class="topbar__item" href="tel:+9779802858997">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        +977 980-2858997
+      </a>
+      <a class="topbar__item" href="mailto:info@balajitechnologies.com.np">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        info@balajitechnologies.com.np
+      </a>
+    </div>
+    <div class="topbar__group">
+      <span class="topbar__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Pokhara &amp; Butwal, Nepal
+      </span>
+      <a class="topbar__item topbar__wa" href="https://wa.me/9779802858997" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.21-8.24 8.21Z"/></svg>
+        WhatsApp Quick Chat
+      </a>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo" aria-label="Balaji Technologies Suppliers Pvt. Ltd. — Home">
+      <span class="logo__mark">BT</span>
+      <img src="logo.jpg" alt="Balaji Technologies Suppliers Pvt. Ltd. logo" class="logo__img" />
+      <span class="logo__text">
+        <strong>Balaji Technologies</strong>
+        <small>Suppliers Pvt. Ltd.</small>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="products.html">Products &amp; Solutions</a>
+      <a href="branches.html">Outlets / Branches</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="contact.html" class="nav__cta">Request a Quote</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <span class="current">About Us</span>
+    </nav>
+    <h1>About Balaji Technologies Suppliers</h1>
+    <p>A Nepal-based technology supply and solutions company delivering surveillance, optical fiber networking, and power backup hardware to businesses, contractors, ISPs, and homeowners.</p>
+  </div>
+</section>
+
+<!-- ABOUT SPLIT -->
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <span class="eyebrow">Who We Are</span>
+        <h2>Your Single Source for Security, Fiber &amp; Power Infrastructure</h2>
+        <p>Balaji Technologies Suppliers Pvt. Ltd. was built to solve a simple problem: sourcing reliable, genuine technology hardware in Nepal shouldn't be complicated. We bring together surveillance equipment, optical fiber infrastructure, enterprise networking gear, and power backup systems under one roof.</p>
+        <p>From a single IP camera for a retail shop to a full GPON rollout for an ISP, our team supplies the hardware, advises on the architecture, and stands behind it with real technical support.</p>
+
+        <ul class="check-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Genuine, tested hardware<small>Verified specifications from trusted brands</small></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Two physical outlets<small>Pokhara (Head Office) &amp; Butwal (Branch)</small></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Project-scale supply capability<small>Bulk orders, contractor pricing, staged delivery</small></span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="split__media reveal">
+        <svg viewBox="0 0 520 420" role="img" aria-label="Illustration of the Balaji Technologies supply network across Nepal">
+          <defs>
+            <linearGradient id="aGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#00C2D1" stop-opacity=".95"/>
+              <stop offset="100%" stop-color="#1B417F" stop-opacity=".5"/>
+            </linearGradient>
+          </defs>
+          <circle cx="260" cy="210" r="165" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+          <circle cx="260" cy="210" r="120" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="1" stroke-dasharray="4 8"/>
+          <circle cx="260" cy="210" r="75" fill="none" stroke="rgba(0,194,209,.22)" stroke-width="1" stroke-dasharray="3 6"/>
+
+          <g stroke="url(#aGrad)" stroke-width="1.8" fill="none" stroke-linecap="round">
+            <path class="dash-flow" d="M260 210 L260 80"/>
+            <path class="dash-flow" d="M260 210 L390 140" style="animation-delay:-.4s"/>
+            <path class="dash-flow" d="M260 210 L396 280" style="animation-delay:-.8s"/>
+            <path class="dash-flow" d="M260 210 L260 340" style="animation-delay:-1.2s"/>
+            <path class="dash-flow" d="M260 210 L128 280" style="animation-delay:-1.6s"/>
+            <path class="dash-flow" d="M260 210 L130 140" style="animation-delay:-2s"/>
+          </g>
+
+          <g filter="url(#softGlow)">
+            <circle class="node-pulse" cx="260" cy="80" r="11" fill="#00C2D1" opacity=".5"/>
+            <circle class="node-pulse" cx="390" cy="140" r="10" fill="#25D6E6" opacity=".5" style="animation-delay:-.6s"/>
+            <circle class="node-pulse" cx="396" cy="280" r="11" fill="#00C2D1" opacity=".5" style="animation-delay:-1.2s"/>
+            <circle class="node-pulse" cx="260" cy="340" r="10" fill="#25D6E6" opacity=".5" style="animation-delay:-1.8s"/>
+            <circle class="node-pulse" cx="128" cy="280" r="11" fill="#00C2D1" opacity=".5" style="animation-delay:-2.4s"/>
+            <circle class="node-pulse" cx="130" cy="140" r="10" fill="#25D6E6" opacity=".5" style="animation-delay:-3s"/>
+          </g>
+
+          <g fill="#0A1F44" stroke="#7FE9F2" stroke-width="1.6">
+            <circle cx="260" cy="80" r="5.5"/><circle cx="390" cy="140" r="5"/>
+            <circle cx="396" cy="280" r="6"/><circle cx="260" cy="340" r="5"/>
+            <circle cx="128" cy="280" r="5.5"/><circle cx="130" cy="140" r="5"/>
+          </g>
+
+          <circle cx="260" cy="210" r="52" fill="#0E2A56" opacity=".55"/>
+          <circle cx="260" cy="210" r="38" fill="#123063" stroke="rgba(127,233,242,.55)" stroke-width="1.6"/>
+          <text x="260" y="206" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="17" font-weight="800" fill="#7FE9F2">BTS</text>
+          <text x="260" y="224" text-anchor="middle" font-family="'Plus Jakarta Sans',sans-serif" font-size="8" font-weight="700" fill="rgba(199,211,228,.7)" letter-spacing="1">PVT. LTD.</text>
+
+          <g font-family="'Plus Jakarta Sans',sans-serif" font-size="9.5" font-weight="700" fill="rgba(199,211,228,.75)">
+            <text x="260" y="58" text-anchor="middle">SURVEILLANCE</text>
+            <text x="408" y="136" text-anchor="middle">FIBER</text>
+            <text x="414" y="284" text-anchor="middle">NETWORKING</text>
+            <text x="260" y="368" text-anchor="middle">POWER</text>
+            <text x="110" y="284" text-anchor="end">SUPPORT</text>
+            <text x="112" y="136" text-anchor="end">SUPPLY</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION / APPROACH -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our Approach</span>
+      <h2>Supply With Substance</h2>
+      <p>Three principles guide every order we fulfil — whether it's a single switch or a province-wide rollout.</p>
+    </div>
+
+    <div class="cat-grid">
+      <article class="cat-card reveal">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div>
+        <h3>Right Product, Right Spec</h3>
+        <p>We match hardware to the actual deployment — PoE budget, fiber distance, camera resolution, backup runtime. No over-selling, no under-speccing.</p>
+      </article>
+      <article class="cat-card reveal">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+        <h3>Scalable Supply</h3>
+        <p>From single-unit retail purchases to contractor bulk orders with staged delivery — our stock and logistics scale with your project timeline.</p>
+      </article>
+      <article class="cat-card reveal">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg></div>
+        <h3>Support After the Sale</h3>
+        <p>Configuration guidance, topology advice, and troubleshooting from a team that works with these systems every day — not a call centre script.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- STRENGTHS -->
+<section class="section section--dark why">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Enterprise Strengths</span>
+      <h2>Why Businesses Choose Balaji Technologies</h2>
+    </div>
+    <div class="why__grid">
+      <article class="why-card reveal">
+        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Quality Assured</h3>
+        <p>Tested hardware built for reliability — genuine brands, verified specifications, dependable performance.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></svg></div>
+        <h3>Expert Support</h3>
+        <p>Technical assistance and network system guidance from experienced engineers.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Regional Coverage</h3>
+        <p>Serving Pokhara, Butwal, and the wider Gandaki &amp; Lumbini provinces from two outlets.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div class="cta-band__text">
+        <h2>Let's Work Together</h2>
+        <p>Whether you're an installer, an ISP, or a business owner upgrading your premises — we'd like to hear about your project.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        <a href="products.html" class="btn btn--outline-light">Browse Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo__mark">BT</span>
+          <img src="logo.jpg" alt="Balaji Technologies Suppliers Pvt. Ltd. logo" class="logo__img" />
+        </a>
+        <p class="footer__about">Supplier of next-generation surveillance, optical fiber &amp; enterprise networking infrastructure, and power hardware — serving businesses across Gandaki and Lumbini provinces from Pokhara and Butwal.</p>
+        <div class="socials">
+          <a href="https://wa.me/9779802858997" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.21-8.24 8.21Z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9h4v12H3V9Zm7 0h3.83v1.64h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.4c0-1.29-.02-2.95-1.8-2.95s-2.07 1.4-2.07 2.85V21h-4V9Z"/></svg></a>
+          <a href="mailto:info@balajitechnologies.com.np" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products &amp; Solutions</a>
+          <a href="branches.html">Outlets / Branches</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="contact.html">Request a Quote</a>
+        </div>
+      </div>
+      <div>
+        <h4>Product Categories</h4>
+        <div class="footer__links">
+          <a href="products.html#surveillance">Wireless CCTV &amp; IP Cameras</a>
+          <a href="products.html#surveillance">NVRs &amp; Recording</a>
+          <a href="products.html#networking">Optical Fiber &amp; Drop Cables</a>
+          <a href="products.html#networking">EPON / GPON OLTs</a>
+          <a href="products.html#networking">Managed &amp; PoE Switches</a>
+          <a href="products.html#networking">Routers</a>
+          <a href="products.html#power">Batteries &amp; Power Backup</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact Details</h4>
+        <div class="footer__contact">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong>Head Office — Pokhara</strong>Pokhara-4, Street No. 7, Balgopal Marg, Gairapatan, Pokhara, Gandaki Province, Nepal
+              <span class="footer__phones">
+                <a href="tel:+9779802852997">9802852997</a>
+                <a href="tel:+9779802853997">9802853997</a>
+                <a href="tel:+9779802854997">9802854997</a>
+                <a href="tel:+9779802858997">9802858997</a>
+              </span>
+            </span>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span><strong>Branch Office — Butwal</strong>Butwal-9, Kalikapath, Tinkune, Butwal, Lumbini Province, Nepal
+              <span class="footer__phones">
+                <a href="tel:+9779703994050">9703994050</a>
+                <a href="tel:+9779802854414">9802854414</a>
+                <a href="tel:+9779802852579">9802852579</a>
+              </span>
+            </span>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <a href="mailto:info@balajitechnologies.com.np">info@balajitechnologies.com.np</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2025</span> Balaji Technologies Suppliers Pvt. Ltd. All rights reserved.</span>
+      <span>Pokhara &middot; Butwal &middot; Nepal</span>
+    </div>
+  </div>
+</footer>
+
+<div class="fab-stack">
+  <button class="fab fab--top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+  <a class="fab fab--wa" href="https://wa.me/9779802858997" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <span class="fab-label">Chat on WhatsApp</span>
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.21-8.24 8.21Z"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
